@@ -1,16 +1,11 @@
-import EditButton from "../UI/EditButton";
+import NewTodo from "../NewTodo/NewTodo";
 
 const TodoList = (props) => {
-  const editTextHandler = () => {
-    props.todos();
-  };
-
   return (
     <ul>
       {props.todos.map((todo, index) => (
         <ul key={index}>
-          {todo.time} {todo.text}
-          <EditButton onEdit={editTextHandler} />
+          <NewTodo text={todo.text} time={todo.time} />
         </ul>
       ))}
     </ul>
