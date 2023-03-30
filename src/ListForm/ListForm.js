@@ -30,7 +30,15 @@ const ListForm = (props) => {
   };
 
   return (
-    <Card style={{ color: "#000" }}>
+    <Card
+      style={{
+        color: "white",
+        backgroundColor: "#1F1A24",
+        width: "40%",
+        display: "block",
+        margin: "auto",
+      }}
+    >
       <form type="submit" onSubmit={submitTodo}>
         <Card.Title>What Do I Need To Do?</Card.Title>
         <input
