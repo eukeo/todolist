@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Card } from "react-bootstrap";
 
 const NewDate = () => {
   const [date, setDate] = useState(new Date());
@@ -10,13 +11,11 @@ const NewDate = () => {
     };
   });
 
-  console.log();
-
   return (
-    <div>
-      <p>{date.toLocaleDateString()}</p>
-      <p>{date.toLocaleTimeString()}</p>
-    </div>
+    <Card className="date">
+      <Card.Title>Today is {date.toLocaleDateString()}</Card.Title>
+      <Card.Title>{date.toLocaleTimeString()}</Card.Title>
+    </Card>
   );
 };
 

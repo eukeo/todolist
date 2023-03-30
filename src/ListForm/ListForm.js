@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Card } from "react-bootstrap";
 
 const ListForm = (props) => {
   const [enteredText, setEnteredText] = useState("");
@@ -29,13 +30,14 @@ const ListForm = (props) => {
   };
 
   return (
-    <div>
+    <Card style={{ color: "#000" }}>
       <form type="submit" onSubmit={submitTodo}>
-        <label>What Do I Need To Do?</label>
+        <Card.Title>What Do I Need To Do?</Card.Title>
         <input
           type="text"
           value={enteredText}
           onChange={enteredTextHandler}
+          placeholder="What's next?"
         ></input>
         <label>Time</label>
         <input
@@ -45,7 +47,7 @@ const ListForm = (props) => {
         ></input>
         <button disabled={buttonDisabled}>Confirm</button>
       </form>
-    </div>
+    </Card>
   );
 };
 
