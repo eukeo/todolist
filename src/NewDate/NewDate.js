@@ -19,6 +19,7 @@ const NewDate = () => {
         width: "40%",
         display: "block",
         margin: "auto",
+        color: "white",
       }}
     >
       <Card.Title>Today is {date.toLocaleDateString()}</Card.Title>

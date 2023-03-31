@@ -1,3 +1,4 @@
+import "./NewTodo.css";
 import { useState, useEffect } from "react";
 
 const NewTodo = (props) => {
@@ -43,7 +44,7 @@ const NewTodo = (props) => {
   return (
     <div>
       {!deleteTodo && (
-        <ul>
+        <ul className="todoText">
           {editTodo && editTime ? (
             <ul>
               <input type="text" value={text} onChange={textChangeHandler} />
@@ -52,8 +53,12 @@ const NewTodo = (props) => {
           ) : (
             <li>
               {text} {time}
-              <button onClick={editTodoHandler}>Edit</button>
-              <button onClick={deleteTodoHandler}>Remove</button>
+              <button className="editBtn" onClick={editTodoHandler}>
+                Edit
+              </button>
+              <button className="deleteBtn" onClick={deleteTodoHandler}>
+                Delete
+              </button>
             </li>
           )}
           {editTodo && (

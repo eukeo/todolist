@@ -1,0 +1,30 @@
+.title {
+  text-align: center;
+  margin: 5%;
+  font-size: 24px;
+}
+
+.inputFields {
+  margin-left: 10%;
+  margin-bottom: 5%;
+  display: inline-flex;
+  font-size: 20px;
+  width: 100%;
+}
+
+.textInput {
+  border-radius: 10px;
+}
+
+.timeInput {
+  padding-left: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.confirmBtn {
+  border-radius: 10px;
+  background-color: rgb(61, 130, 209);
+  color: white;
+  margin-left: 10px;
+}

@@ -1,0 +1,19 @@
+.todoText {
+  list-style: none;
+}
+
+.editBtn {
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(61, 130, 209);
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.deleteBtn {
+  border-radius: 10px;
+  background-color: rgb(61, 130, 209);
+  color: white;
+  margin-left: 5px;
+  font-size: 14px;
+}

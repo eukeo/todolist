@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./TodoList.css";
 import NewTodo from "../NewTodo/NewTodo";
 import { Card } from "react-bootstrap";
 
@@ -9,9 +10,10 @@ const TodoList = (props) => {
     <div style={{ width: "40%", display: "block", margin: "auto" }}>
       {allTodos.map((todo, index) => (
         <Card
+          className="todoItem"
           key={index}
           style={{
-            backgroundColor: "#e4e5f1",
+            backgroundColor: "#D3E4F4",
           }}
         >
           <NewTodo text={todo.text} time={todo.time} />
