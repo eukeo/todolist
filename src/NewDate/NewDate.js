@@ -1,3 +1,4 @@
+import "./NewDate.css";
 import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
 
@@ -12,19 +13,17 @@ const NewDate = () => {
   });
 
   return (
-    <Card
+    <div
       className="date"
       style={{
-        color: "white",
         width: "40%",
-        backgroundColor: "#332940",
         display: "block",
         margin: "auto",
       }}
     >
       <Card.Title>Today is {date.toLocaleDateString()}</Card.Title>
       <Card.Title>{date.toLocaleTimeString()}</Card.Title>
-    </Card>
+    </div>
   );
 };
 

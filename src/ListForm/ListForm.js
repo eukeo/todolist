@@ -33,7 +33,7 @@ const ListForm = (props) => {
     <Card
       style={{
         color: "white",
-        backgroundColor: "#1F1A24",
+        backgroundColor: "#484b6a",
         width: "40%",
         display: "block",
         margin: "auto",

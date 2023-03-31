@@ -11,8 +11,7 @@ const TodoList = (props) => {
         <Card
           key={index}
           style={{
-            color: "white",
-            backgroundColor: "#332940",
+            backgroundColor: "#e4e5f1",
           }}
         >
           <NewTodo text={todo.text} time={todo.time} />
