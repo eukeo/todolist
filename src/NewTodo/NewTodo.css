@@ -1,5 +1,12 @@
 .todoText {
   list-style: none;
+  margin-top: 10px;
+}
+
+.btns {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 
 .editBtn {
@@ -11,6 +18,28 @@
 }
 
 .deleteBtn {
+  border-radius: 10px;
+  background-color: rgb(61, 130, 209);
+  color: white;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.editTextInput {
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.editTimeInput {
+  font-size: 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.saveBtn {
+  position: absolute;
+  right: 210px;
+  top: 20px;
   border-radius: 10px;
   background-color: rgb(61, 130, 209);
   color: white;

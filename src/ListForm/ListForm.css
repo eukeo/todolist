@@ -6,10 +6,10 @@
 
 .inputFields {
   margin-left: 10%;
-  margin-bottom: 5%;
   display: inline-flex;
   font-size: 20px;
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .textInput {

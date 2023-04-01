@@ -47,23 +47,39 @@ const NewTodo = (props) => {
         <ul className="todoText">
           {editTodo && editTime ? (
             <ul>
-              <input type="text" value={text} onChange={textChangeHandler} />
-              <input type="time" value={time} onChange={timeChangeHandler} />
+              <input
+                className="editTextInput"
+                type="text"
+                value={text}
+                onChange={textChangeHandler}
+              />
+              <input
+                className="editTimeInput"
+                type="time"
+                value={time}
+                onChange={timeChangeHandler}
+              />
             </ul>
           ) : (
             <li>
-              {text} {time}
-              <button className="editBtn" onClick={editTodoHandler}>
-                Edit
-              </button>
-              <button className="deleteBtn" onClick={deleteTodoHandler}>
-                Delete
-              </button>
+              {time} - {text}
+              <div className="btns">
+                <button className="editBtn" onClick={editTodoHandler}>
+                  Edit
+                </button>
+                <button className="deleteBtn" onClick={deleteTodoHandler}>
+                  Delete
+                </button>
+              </div>
             </li>
           )}
           {editTodo && (
             <div>
-              <button onClick={saveTodoHandler} disabled={saveButton}>
+              <button
+                className="saveBtn"
+                onClick={saveTodoHandler}
+                disabled={saveButton}
+              >
                 Save
               </button>
             </div>
