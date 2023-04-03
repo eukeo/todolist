@@ -1,5 +1,6 @@
 .formContainer {
   width: 50%;
+  text-align: center;
 }
 
 .title {
@@ -9,11 +10,10 @@
 }
 
 .inputFields {
-  /* margin-left: 10%; */
   display: inline-flex;
   font-size: 20px;
-  width: 100%;
-  margin-bottom: 5%;
+  width: 64%;
+  margin: 5% auto;
 }
 
 .textInput {
@@ -47,13 +47,21 @@
 
 @media only screen and (max-width: 980px) {
   .inputFields {
-    width: 100%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .title {
+    font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 980px) {
   .textInput,
-  .timeInput {
-    width: 70%;
+  .timeInput,
+  .confirmBtn {
+    width: 40%;
+    font-size: 8px;
   }
 }
