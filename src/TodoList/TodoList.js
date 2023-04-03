@@ -7,7 +7,7 @@ const TodoList = (props) => {
   const allTodos = props.todos;
 
   return (
-    <div style={{ width: "40%", display: "block", margin: "auto" }}>
+    <div style={{ display: "block", margin: "auto" }} className="todoList">
       {allTodos.map((todo, index) => (
         <Card
           className="todoItem"

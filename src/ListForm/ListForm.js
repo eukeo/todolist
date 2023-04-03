@@ -6,12 +6,15 @@ const ListForm = (props) => {
   const [enteredText, setEnteredText] = useState("");
   const [enteredTime, setEnteredTime] = useState("");
   const [buttonDisabled, setButtonDisabled] = useState(true);
+  const [buttonColor, setButtonColor] = useState("grey");
 
   useEffect(() => {
     if (enteredText.length <= 2 || enteredTime === "") {
       setButtonDisabled(true);
+      setButtonColor("grey");
     } else {
       setButtonDisabled(false);
+      setButtonColor("rgb(61, 130, 209)");
     }
   }, [enteredText, enteredTime]);
 
@@ -32,10 +35,10 @@ const ListForm = (props) => {
 
   return (
     <Card
+      className="formContainer"
       style={{
         color: "Black",
         backgroundColor: "#FFFFFF",
-        width: "40%",
         display: "block",
         margin: "auto",
       }}
@@ -56,7 +59,13 @@ const ListForm = (props) => {
             value={enteredTime}
             onChange={enteredTimeHandler}
           ></input>
-          <button className="confirmBtn" disabled={buttonDisabled}>
+          <button
+            className="confirmBtn"
+            style={{
+              background: buttonColor,
+            }}
+            disabled={buttonDisabled}
+          >
             Confirm
           </button>
         </div>
